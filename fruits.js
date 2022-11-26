@@ -20,22 +20,22 @@ $(document).ready(function () {
     //............. ADD TO CART JS .............
     $(".plus_btn").click(function (ev) {
         const $input = $(ev.currentTarget).siblings('input');
-        const default_val = parseInt($input.val());
-        default_val = default_val + 1;
-        if (default_val > 10) {
+        const defaultval = parseInt($input.val());
+        defaultval = defaultval + 1;
+        if (defaultval > 10) {
             alert("Maxium value");
         } else {
-            $input.val(default_val);
+            $input.val(defaultval);
         }
     });
     $(".minus_btn").click(function (ev) {
         const $input = $(ev.currentTarget).siblings('input');
-        const default_val = parseInt($input.val());
-        default_val = default_val - 1;
-        if (default_val < 1) {
+        const defaultval = parseInt($input.val());
+        defaultval = defaultval - 1;
+        if (defaultval < 1) {
             alert("Minimum value");
         } else {
-            $input.val(default_val);
+            $input.val(defaultval);
         }
     });
 });
